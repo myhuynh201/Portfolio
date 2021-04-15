@@ -202,9 +202,80 @@ body {
     margin-right: 15%;
     padding: 0px 0;
 }
+.project-box{
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+.single-item {
+  flex-basis: 30%;
+  text-align: center;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  color: #fff;
+  position: relative;
+}
+.single-item img {
+  width: 450px;
+  height: 300px;
+  border-radius: 7px;
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius:7px;
+  cursor: pointer;
+  background: black;
+  opacity: 0;
+  transition: 1s;
+}
+.single-item:hover .overlay{
+  opacity: 1;
+}
+.project-desc{
+  width: 60%;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: 1s;
+}
+.project-desc h3{
+  font-size: 30px;
+  color:#4ef7db;
+}
+hr{
+  background: #fff;
+  height: 2px;
+  border: 0;
+  margin: 15px auto;
+  width: 60%;
+}
+
+.project-desc p{
+  font-size: 20px;
+  color:#4ef7db;
+}
+.single-item:hover .project-desc{
+  bottom: 40%;
+  opacity: 1;
+}
+.project-desc i{
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 20px;
+}
+
 
 /*--Contact--*/
 #contact{
+    margin-top: 0;
     margin-left: 15%;
     margin-right: 15%;
     padding: 0px 0;
